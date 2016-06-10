@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+        
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/angular.min.js" type="text/javascript"></script>
+        <script src="js/angular-route.min.js" type="text/javascript"></script>
+        <script src="js/material.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout__title">Simple Layout by Donie</span>
+                    <div class="mdl-layout-spacer"></div>
+                </div>
+            </header>
+            
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <!--step1: upload timesheet file-->
+                    <!--step2: employee name-->
+                    <!--step3: get time logs from db and display it on grid-->
+                    <!--step4: export template-->
+                    <div class="">
+                        Timesheet File: <input type="file" name="timesheetFile" id="timesheetFile"/>
+                    </div>
+                    <table class="mdl-data-table mdl-js-data-table">
+                        <thead>
+                            <tr>
+                                <th class="mdl-data-table__cell--non-numeric">Date</th>
+                                <th class="mdl-data-table__cell--non-numeric">Employee</th>
+                                <th class="mdl-data-table__cell--non-numeric">Service Item</th>
+                                <th class="mdl-data-table__cell--non-numeric">Payroll Item</th>
+                                <th class="mdl-data-table__cell--non-numeric">Start</th>
+                                <th class="mdl-data-table__cell--non-numeric">Stop</th>
+                                <th class="mdl-data-table__cell--non-numeric">Start</th>
+                                <th class="mdl-data-table__cell--non-numeric">Stop</th>
+                                <th class="mdl-data-table__cell--non-numeric">Total Hours</th>
+                                <th class="mdl-data-table__cell--non-numeric">Additional Info</th>
+                                <th class="mdl-data-table__cell--non-numeric"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="mdl-data-table__cell--non-numeric">
+                                    <input type="date" name="date"/>
+                                </th>
+                                <th class="mdl-data-table__cell--non-numeric">
+                                    <input type="text" name="employee" class="mdl-textfield__input"/>
+                                </th>
+                                <th class="mdl-data-table__cell--non-numeric">
+                                    <input type="text" name="serviceItem" class="mdl-textfield__input"/>
+                                </th>
+                                <th class="mdl-data-table__cell--non-numeric">
+                                    <input type="text" name="payrollItem" class="mdl-textfield__input"/>
+                                </th>
+                                <th class="mdl-data-table__cell--non-numeric">
+                                    <input type="time" name="start1"/>
+                                </th>
+                                <th class="mdl-data-table__cell--non-numeric">
+                                    <input type="time" name="stop1"/>
+                                </th>
+                                <th class="mdl-data-table__cell--non-numeric">
+                                    <input type="time" name="start2"/>
+                                </th>
+                                <th class="mdl-data-table__cell--non-numeric">
+                                    <input type="time" name="stop2"/>
+                                </th>
+                                <th class="mdl-data-table__cell--non-numeric">
+                                    <span></span>
+                                </th>
+                                <th class="mdl-data-table__cell--non-numeric">
+                                    <textarea class="mdl-textfield__input" rows="1"></textarea>
+                                </th>
+                                <th class="mdl-data-table__cell--non-numeric">
+                                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab add-rows"><i class="material-icons">add</i></button>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+        <script src="js/appservice.js" type="text/javascript"></script>
+    </body>
+</html>
